@@ -1,0 +1,33 @@
+include ./includes/head.jade
+  body
+    div.full
+      h1= pageTitle
+      include ./includes/nav.jade
+    div.full
+      div.page-highlight
+        div.page-highlight-title= latestPostTitle
+
+    div.full
+      div.main-content
+        h2= latestPostTitle
+        div.read-more Read More
+    div.main-content.page-highlight-blurb
+      p.
+        Small Blurb to describe the page highlight. This is taken from the blog post and put here. It should be no more than a couple sentences.
+    div.main-content
+      div.half
+        div.small-highlight
+        div.small-highlight-desc
+          h3 SecondPostTitle
+          div.read-more Read More
+          p.
+            Small blurb to describe these sub highlights. Pulled from the posts. Just a couple sentences.
+      div.half
+        div.small-highlight
+        div.small-highlight-desc
+          h3 SecondPostTitle
+          div.read-more Read More
+          p.
+            Small blurb to describe these sub highlights. Pulled from the posts. Just a couple sentences.
+   
+   include ./includes/footer.jade
